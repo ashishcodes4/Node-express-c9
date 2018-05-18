@@ -9,6 +9,10 @@ app.get('/', (req, res) => {
     res.render('home');
 });
 
+app.get('/route', (req, res) => {
+    res.render('supp');
+});
+
 app.get("/route/:thing", function(req, res){
   var thing = req.params.thing;
    res.render("route", {thingVar: thing});
